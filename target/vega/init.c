@@ -37,11 +37,10 @@
 #include <platform/mmc_core.h>
 #include <platform/boot_mode.h>
 #include <target/cust_key.h>
+
 #include <platform/mt_gpt.h>
 #include <platform/mt_rtc.h>
 #include <platform/mtk_key.h>
-
-
 extern void dmb(void);
 
 static void target_detect(void);

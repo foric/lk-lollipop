@@ -1,6 +1,7 @@
 #ifndef _CUST_LEDS_H
 #define _CUST_LEDS_H
 #include <platform/mt_typedefs.h>
+#define NO_NEED_USB_LED
 enum mt65xx_led_type
 {
 	MT65XX_LED_TYPE_RED = 0,
