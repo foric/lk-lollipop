@@ -198,6 +198,9 @@ extern LCM_DRIVER r69338_hd720_dsi_vdo_jdi_dw8755a_drv;
 extern LCM_DRIVER otm9605a_qhd_dsi_vdo_drv;
 extern LCM_DRIVER ili9806e_dsi_vdo_fwvga_drv;
 
+extern LCM_DRIVER hx8369b_wvga_dsi_vdo_tinno_drv; //LINE<><20140111><add lcd>wangyanhui
+extern LCM_DRIVER hx8369b_wvga_dsi_vdo_tinno_txd_drv; //LINE<JIRA_ID><DATE20140319><BUG_INFO>zenghaihui
+
 LCM_DRIVER* lcm_driver_list[] = 
 {
 #if defined(OTM1283A_HD720_DSI_VDO_TM)
@@ -896,6 +899,15 @@ LCM_DRIVER* lcm_driver_list[] =
 #if defined(OTM9605A_QHD_DSI_VDO)
 	&otm9605a_qhd_dsi_vdo_drv,
 #endif
+
+#if defined(HX8369B_WVGA_DSI_VDO_TINNO)//LINE<><20140111><add lcd>wangyanhui
+		&hx8369b_wvga_dsi_vdo_tinno_drv,
+#endif
+
+#if defined(HX8369B_WVGA_DSI_VDO_TINNO_TXD) //LINE<JIRA_ID><DATE20140319><BUG_INFO>zenghaihui
+		&hx8369b_wvga_dsi_vdo_tinno_txd_drv,
+#endif
+
 };
 
 #define LCM_COMPILE_ASSERT(condition) LCM_COMPILE_ASSERT_X(condition, __LINE__)
