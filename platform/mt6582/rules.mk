@@ -39,10 +39,10 @@ endif
 KEDUMP_MINI := yes
 ARCH_HAVE_MT_RAMDUMP := yes
 
-$(info libshowlogo new path ------- $(LOCAL_DIR)/../../../../../bootable/bootloader/lk/lib/libshowlogo)
+#$(info libshowlogo new path ------- $(LOCAL_DIR)/../../../../../bootable/bootloader/lk/lib/libshowlogo)
 INCLUDES += -I$(LOCAL_DIR)/include \
             -I$(LOCAL_DIR)/include/platform \
-            -I$(LOCAL_DIR)/../../../../../bootable/bootloader/lk/lib/libshowlogo \
+            -Ilib/libshowlogo \
             -Icustom/$(FULL_PROJECT)/lk/include/target \
             -Icustom/$(FULL_PROJECT)/lk/lcm/inc \
             -Icustom/$(FULL_PROJECT)/lk/inc \
